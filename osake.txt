@@ -1,0 +1,110 @@
+/Volumes/vice-arm64-gtk3-3.9/vice-arm64-gtk3-3.9/bin
+
+
+;/Users/samik/Downloads/disk/osake.prg ==1001==
+    0 rem*osakesaastajat*
+    1 rem**** sami.k ****
+    2 rem****  1984  ****
+    9 gosub 1100
+   10 dim a$(12),a(12),b$(12),c(2),d(2,12),x(12)
+   20 for i=1 to 2
+   30 print"pelaajan"i"nimi":input b$(i)
+   40 if len(b$(i))>6 then print"6 kirja inta.":goto 30
+   50 c(i)=1200:next
+   60 for i=1 to 12
+   70 print"yhtion"i"nimi":input a$(i)
+   80 if len(a$(i))>8 then print"8 kirja inta.":goto 70
+   90 a(i)=100:next
+  100 for t=1 to 2
+  110 print"{clr}yhtio    m.  ovh n:o:":print"{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}"
+  120 for i=1 to 12
+  130 print a$(i)tab(9)x(i);a(i)tab(17)i
+  140 next
+  150 print"{down}tekeeko "b$(t):print"ostoja? [k/e]":print"(varat"c(t)")"
+  160 get i$:if i$=""then 160
+  170 if i$="k"then 200
+  180 if i$="e"then 260
+  190 goto 160
+  200 input"n:o";q:if q<1 or q>12 then print"{up}{up}":goto 200
+  210 input"kpl";w
+  220 if c(t)-w*a(q)<0 then print"ei varaa.":goto 200
+  230 c(t)=c(t)-w*a(q)
+  240 d(t,q)=d(t,q)+w
+  250 if c(t)>0 then 110
+  260 print"{clr}pelaajan"t"osakkeet"
+  265 print"{down}n:o nimi     kpl":print"{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}":ax=0
+  270 for i=1 to 12:if d(t,i)>0 then print i;a$(i)tab(12)d(t,i):ax=1
+  280 next
+  290 if ax=0 then print"{down}osakkeita eiole.":gosub 1000:goto 430
+  300 print"myytko?"
+  310 get i$:if i$=""then 310
+  320 if i$="k"then 350
+  330 if i$="e"then 430
+  340 goto 310
+  350 input"nro";q:if q<1 or q>12 then print"{up}{up}":goto 350
+  360 input"kpl";w
+  370 if w>d(t,q)then print"ei ole.{up}{up}{up}":goto 350
+  380 d(t,q)=d(t,q)-w
+  390 c(t)=c(t)+w*a(q)
+  400 print"saatu "w*a(q)"mk."
+  410 print"paaoma"c(t)"mk."
+  420 gosub 1000:goto 260
+  430 next
+  440 print"{clr}osingot"
+  450 for t=1 to 2
+  460 print"{down}"b$(t);":lle :"
+  470 for i=1 to 12
+  480 if d(t,i)>0 then print a$(i)"-"tab(10)d(t,i)*(a(i)/10)"mk":c(t)=c(t)+d(t,i)*(a(i)/10)
+  490 next:next
+  500 gosub 1000
+  505 gosub 700
+  510 for i=1 to 12
+  520 x(i)=int(rnd(ti)*7)-3
+  530 a(i)=a(i)+10*x(i)
+  540 if a(i)=>200 then gosub 580
+  550 if a(i)=<0 then gosub 640
+  560 next
+  570 goto 100
+  580 print"{clr}osakeanti!"
+  590 print a$(i)" kaksin-":print"kertaistaa osakkeensa."
+  600 for t=1 to 2
+  610 d(t,i)=d(t,i)*2:a(i)=100
+  620 next
+  625 gosub 1000
+  630 return
+  640 print"{clr}"a$(i):print"teki konkurssin."
+  650 print"menetitte osakkeenne."
+  660 for t=1 to 2
+  670 d(t,i)=0:a(i)=100
+  680 next
+  685 gosub 1000
+  690 return
+  700 print"{clr}lopetammeko? [k/e]"
+  710 get i$:if i$=""then 710
+  720 if i$="e"then return
+  730 if i$="k"then 800
+  740 goto 710
+  800 print"{clr}varojen laskenta":for i=1 to 1500:next
+  810 for t=1 to 2:print"{clr}"b$(t)":n varat"
+  820 v(t)=v(t)+c(t)
+  830 for i=1 to 12
+  840 if d(t,i)>0 then 860
+  850 next:print"paaoma"v(t):gosub 1000:next:goto 890
+  860 print a$(i);":"tab(9)d(t,i)*a(i);"mk"
+  880 v(t)=v(t)+d(t,i)*a(i):goto 850
+  890 print"{clr}laskenta suoritettu."
+  900 for i=1 to 2
+  910 print"{down}"b$(t)":n varat =",v(t)
+  920 next
+  930 if v(1)=v(2)then print"{down}{down}reilu tasapeli!":end
+  940 if v(1)>v(2)then print"{down}{down}"b$(1)" voitti!":end
+  950 print"{down}{down}"b$(2)" voitti!":end
+ 1000 print"{down}paina nappia."
+ 1010 get ax$:if ax$=""then 1010
+ 1020 return
+ 1100 print"{clr}{CBM-A}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{CBM-S}";:for i=1 to 3:print"{SHIFT--}                    {SHIFT--}";:next
+ 1110 print"{CBM-Q}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{CBM-W}";:for i=1 to 4:print"{SHIFT--}                    {SHIFT--}";:next
+ 1120 print"{CBM-Z}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{CBM-X}":print"{home}{down}{down}{rght}{rght}{rght}*osakesaastajat*"
+ 1121 print"{home}{down}{down}{down}{down}{down}{down}{rght}{rght}{rght}(c)sami.k 1984":print"{up}{rght}{rght}{rght}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}{CBM-T}"
+ 1130 print"{down}{down}":return
+
