@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05C8CE6B7B254D8B9E894C42 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7108F4E9053422787B433EB /* SetupView.swift */; };
+		1403C83DCA8B4C2FBF1353D1 /* DividendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937E0E11197442CB202C6B1 /* DividendView.swift */; };
+		171BD1910557433A81E5839E /* OsakesaastajatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F00909D774491E909CD8B0 /* OsakesaastajatApp.swift */; };
+		3EEF1F74037341FA8B391DFF /* SellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CABED1C69544FAA60C24FB /* SellView.swift */; };
+		790EC5CCFC3B47F7A02C62A1 /* EndGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CBDF25545F4CA598698EE3 /* EndGameView.swift */; };
+		8C81D5F565604E81831DE284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 699CA06C49264242997BF5D4 /* Assets.xcassets */; };
+		8CB7680BC8204140B0941E7D /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1463F79A544F2696646EE8 /* TitleView.swift */; };
+		9F8DCB0B9DD04269A4CDAC4C /* GameCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF21FB59C7AF4A38A0CB53D0 /* GameCenterManager.swift */; };
+		A0DBFCC5412444858B49ABD7 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B97F08E8A734496BE73F268 /* GameKit.framework */; };
+		AE9C9D4A81564CD29DE488FB /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3D80CDE504A3A91D51586 /* GameModel.swift */; };
+		BA66C132C21F4A7788EC670E /* AskQuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F97AC754B7498C8B22B4A4 /* AskQuitView.swift */; };
+		BDE3509FA3E948C68D0C5C36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2EF488CB846E0A2027F64 /* ContentView.swift */; };
+		D7B02F19F929452B85125C74 /* BuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA35C782D24FCC9625E8B3 /* BuyView.swift */; };
+		DC0C38EAEC714A1D8915933D /* PriceEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947D4E8B2E8485B90864B2C /* PriceEventView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12CBDF25545F4CA598698EE3 /* EndGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameView.swift; sourceTree = "<group>"; };
+		3B97F08E8A734496BE73F268 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		6947D4E8B2E8485B90864B2C /* PriceEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceEventView.swift; sourceTree = "<group>"; };
+		699CA06C49264242997BF5D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75C3D80CDE504A3A91D51586 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		7F1463F79A544F2696646EE8 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		82CABED1C69544FAA60C24FB /* SellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellView.swift; sourceTree = "<group>"; };
+		9937E0E11197442CB202C6B1 /* DividendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendView.swift; sourceTree = "<group>"; };
+		A6F97AC754B7498C8B22B4A4 /* AskQuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuitView.swift; sourceTree = "<group>"; };
+		B48D469BCF454ABEBE5BD145 /* Osakesaastajat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Osakesaastajat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA2EF488CB846E0A2027F64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C7F00909D774491E909CD8B0 /* OsakesaastajatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OsakesaastajatApp.swift; sourceTree = "<group>"; };
+		CEE0D4D4C3864BCFBF85D2A7 /* Osakesaastajat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Osakesaastajat.entitlements; sourceTree = "<group>"; };
+		D7108F4E9053422787B433EB /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		F7CA35C782D24FCC9625E8B3 /* BuyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyView.swift; sourceTree = "<group>"; };
+		FF21FB59C7AF4A38A0CB53D0 /* GameCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D909A7DEFAF4448B07382EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DBFCC5412444858B49ABD7 /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16C6EB7DE82C4ABC8524C4F8 = {
+			isa = PBXGroup;
+			children = (
+				C21EEDE9AA904228951A0477,
+				9D02F6788A1440F486399E23 /* Products */,
+				86DF71442F5C2C2B0059AE22 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		86DF71442F5C2C2B0059AE22 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				3B97F08E8A734496BE73F268 /* GameKit.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		9D02F6788A1440F486399E23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B48D469BCF454ABEBE5BD145 /* Osakesaastajat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C21EEDE9AA904228951A0477 = {
+			isa = PBXGroup;
+			children = (
+				C7F00909D774491E909CD8B0 /* OsakesaastajatApp.swift */,
+				BEA2EF488CB846E0A2027F64 /* ContentView.swift */,
+				75C3D80CDE504A3A91D51586 /* GameModel.swift */,
+				FF21FB59C7AF4A38A0CB53D0 /* GameCenterManager.swift */,
+				7F1463F79A544F2696646EE8 /* TitleView.swift */,
+				D7108F4E9053422787B433EB /* SetupView.swift */,
+				F7CA35C782D24FCC9625E8B3 /* BuyView.swift */,
+				82CABED1C69544FAA60C24FB /* SellView.swift */,
+				9937E0E11197442CB202C6B1 /* DividendView.swift */,
+				6947D4E8B2E8485B90864B2C /* PriceEventView.swift */,
+				A6F97AC754B7498C8B22B4A4 /* AskQuitView.swift */,
+				12CBDF25545F4CA598698EE3 /* EndGameView.swift */,
+				699CA06C49264242997BF5D4 /* Assets.xcassets */,
+				CEE0D4D4C3864BCFBF85D2A7 /* Osakesaastajat.entitlements */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDA87D1A56C54D5FB0152957 /* Osakesaastajat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 806616A919024389B80E84E5 /* Build configuration list for PBXNativeTarget "Osakesaastajat" */;
+			buildPhases = (
+				7E2F4B1D25B5458AA2CA81E6 /* Sources */,
+				9D909A7DEFAF4448B07382EE /* Frameworks */,
+				7AC2E4FA48D8499C9D4BD223 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Osakesaastajat;
+			productName = Osakesaastajat;
+			productReference = B48D469BCF454ABEBE5BD145 /* Osakesaastajat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C0108FD194D4B0A9E8B6802 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					FDA87D1A56C54D5FB0152957 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = E2ACCEDE539B4ED8A5799796 /* Build configuration list for PBXProject "Osakesaastajat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16C6EB7DE82C4ABC8524C4F8;
+			productRefGroup = 9D02F6788A1440F486399E23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDA87D1A56C54D5FB0152957 /* Osakesaastajat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AC2E4FA48D8499C9D4BD223 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C81D5F565604E81831DE284 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E2F4B1D25B5458AA2CA81E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171BD1910557433A81E5839E /* OsakesaastajatApp.swift in Sources */,
+				BDE3509FA3E948C68D0C5C36 /* ContentView.swift in Sources */,
+				AE9C9D4A81564CD29DE488FB /* GameModel.swift in Sources */,
+				9F8DCB0B9DD04269A4CDAC4C /* GameCenterManager.swift in Sources */,
+				8CB7680BC8204140B0941E7D /* TitleView.swift in Sources */,
+				05C8CE6B7B254D8B9E894C42 /* SetupView.swift in Sources */,
+				D7B02F19F929452B85125C74 /* BuyView.swift in Sources */,
+				3EEF1F74037341FA8B391DFF /* SellView.swift in Sources */,
+				1403C83DCA8B4C2FBF1353D1 /* DividendView.swift in Sources */,
+				DC0C38EAEC714A1D8915933D /* PriceEventView.swift in Sources */,
+				BA66C132C21F4A7788EC670E /* AskQuitView.swift in Sources */,
+				790EC5CCFC3B47F7A02C62A1 /* EndGameView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		54C7FAD22E64428D85AA2BEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASPRUNTIME_VERSION = 2;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Osakesaastajat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Osakesaastajat;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.osakesaastajat.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CA0F99D7D8741258AA7FBB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			};
+			name = Debug;
+		};
+		CC40CB3E2CA2475388E44A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASPRUNTIME_VERSION = 2;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Osakesaastajat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Osakesaastajat;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.osakesaastajat.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E503458F152E4895802E5B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		806616A919024389B80E84E5 /* Build configuration list for PBXNativeTarget "Osakesaastajat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C7FAD22E64428D85AA2BEC /* Debug */,
+				CC40CB3E2CA2475388E44A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2ACCEDE539B4ED8A5799796 /* Build configuration list for PBXProject "Osakesaastajat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA0F99D7D8741258AA7FBB9 /* Debug */,
+				E503458F152E4895802E5B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C0108FD194D4B0A9E8B6802 /* Project object */;
+}
